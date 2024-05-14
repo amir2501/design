@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Online premium clothes shop " />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta
+      name="description"
+      content="Discover world of premium uzbek National clothes on avaible price. The best products exclusively on our online shop"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand name</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- fonts -->
+    <!-- h1: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- p: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="main">
+      <div id="navbar">
+        <a href="#img">Home</a>
+        <a href="#about">about</a>
+        <a href="./social-app-links/index.html">Contact</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">menu</button>
+          <div class="dropdown-content">
+            <a href="#img">Home</a>
+            <a href="#about">about</a>
+            <a href="./social-app-links/index.html">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <img src="./images/national.jpeg" alt="model" id="img" />
+      <section>
+        <h1>2024 New collection</h1>
+        <p>
+          brands new 2024 collection represents beuty of Uzbekistan nation
+          history and give estetic look. Colors are relaxed and natural, there
+          are unique details therefore they have simple design
+        </p>
+
+        <ul>
+          <li>
+            <img src="./images/model-3.jpeg" alt="model" />
+            <p>the Historical clothes</p>
+            <h1>Woman</h1>
+          </li>
+          <li>
+            <img src="./images/uzbek-4.jpeg" alt="model" />
+            <p>the Historical clothes</p>
+            <h1>Woman</h1>
+          </li>
+          <li>
+            <img src="./images/uzbek-5.jpeg" alt="model" />
+            <p>the Historical clothes</p>
+            <h1>Woman</h1>
+          </li>
+        </ul>
+      </section>
+
+      <section class="looks">
+        <img src="./images/model-in-mountain.jpeg" alt="" />
+        <div class="cover-for-carusel">
+          <div class="pic-ctn">
+            <img src="./images/carusel-1.jpeg" alt="1" class="pic" />
+            <img src="./images/carusel-2.jpeg" alt="2" class="pic" />
+            <img src="./images/carusel-3.jpeg" alt="3" class="pic" />
+            <img src="./images/carusel-4.webp" alt="4" class="pic" />
+            <img src="./images/carusel-5.jpeg" alt="5" class="pic" />
+          </div>
+        </div>
+
+        <img src="./images/uzbek-shoe.jpeg" alt="shoes" class="hidden" />
+
+        <div class="description">
+          <img src="./images/shoe-with-flowers.webp" alt="shoes" />
+          <dl>
+            <dt>
+              <h1>The nationality</h1>
+            </dt>
+            <dd>
+              <p>
+                An elegant and contemporary take on the classic uzbek shoe. Born
+                to be Unique
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <img src="./images/uzbek-shoe.jpeg" alt="shoes" />
+      </section>
+
+      <section class="about" id="about">
+        <h1>Brand name icons</h1>
+        <p>
+          Instantly recognised eyes, Brand Name icons are timeless, elegant, and
+          always reminds about Uzbek nationality and friendlines.
+        </p>
+        <img src="./images/models-2.png" alt="models" />
+        <span>Our selection</span>
+      </section>
+    </article>
+  </body>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+        document.getElementById("img").style.width = "80vw";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+        document.getElementById("img").style.width = "100vw";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+</html>
